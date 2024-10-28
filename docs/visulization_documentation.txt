@@ -1,0 +1,19 @@
+The code is designed to visualize embeddings of sentences in 2D and 3D using t-SNE (t-distributed stochastic neighbor embedding). t-SNE is a dimensionality reduction technique that is particularly well-suited for visualizing high-dimensional data in a lower-dimensional space. In this code, t-SNE is used to reduce the dimensionality of sentence embeddings and plot them in 2D and 3D space.
+Here is a breakdown of the code:
+Importing modules
+The code starts by importing the necessary modules, including:
+random
+os
+matplotlib.pyplot as plt
+tsnecuda.TSNE
+Preparing the embeddings
+The code initializes a list called "embeddings" which contains the sentence embeddings. The embeddings are extracted from a larger dataset of embeddings.
+2D visualizations
+The code then applies t-SNE with 2 components to the embeddings to reduce the dimensionality to 2. This is done using the "TSNE" function from the "tsnecuda" module.
+The resulting 2D embeddings are plotted using the "scatter" function from matplotlib. The points are made translucent with "alpha=.1" so that regions with high density of overlapping points can be visually identified.
+3D visualizations
+The code also provides 3D visualizations of the embeddings.
+First, the embeddings are again reduced to 3 dimensions using t-SNE with the "TSNE" function from the "tsnecuda" module.
+The resulting 3D embeddings are plotted using the "scatter" function from matplotlib with "projection='3d'" to specify the plot is in 3D. The points are made translucent with "alpha=.1" to visually identify regions with high density of overlapping points.
+Overall, this code can be used to visualize sentence embeddings in 2D and 3D space using t-SNE. The resulting visualizations can help identify patterns and similarities in the embeddings.
+

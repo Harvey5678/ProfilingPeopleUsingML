@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "numpy": "^0.0.1",
+    "pinecone-client": "^1.1.0",
+    "transformers": "^3.1.0"
+  }
+}

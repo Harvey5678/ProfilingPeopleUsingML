@@ -1,0 +1,12 @@
+transformers
+numpy
+pinecone-client
+seaborn
+mysql-connector-python
+torch
+torchvision
+torchaudio
+seaborn
+sqlalchemy
+streamlit
+--extra-index-url https://download.pytorch.org/whl/cu116
